@@ -1,7 +1,7 @@
 
 import PropTypes from "prop-types";
 
-import {Statistic,Title,Stat,Li,Label,Percentage} from './StatisticsStyles';
+import {Statistic,Title,Stat,Li,Label,Percentage} from './StatisticsStyles.js';
 
 
 const Statistics=({title,stats})=>(

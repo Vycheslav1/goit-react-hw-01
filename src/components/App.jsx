@@ -1,10 +1,10 @@
-import {Profile} from './Profile/Profile';
+import {Profile} from './Profile/Profile.js';
 
-import {Statistics} from './Statistics/Statistics';
+import {Statistics} from './Statistics/Statistics.js';
 
-import {FriendListItem} from './FriendListItem/FriendListItem';
+import {FriendListItem} from './FriendListItem/FriendListItem.js';
 
-import {TransactionHistory} from './TransactionHistory/TransactionHistory';
+import {TransactionHistory} from './TransactionHistory/TransactionHistory.js';
 
 
 import user from 'data/user.json';

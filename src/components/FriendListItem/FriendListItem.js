@@ -2,7 +2,7 @@
 
 import PropTypes from "prop-types";
 
-import{Container,Title,List,Li,Status,Avatar,Name,PointRed,PointGreen} from './FriendLisItemStyles';
+import{Container,Title,List,Li,Status,Avatar,Name,PointRed,PointGreen} from './FriendLisItemStyles.js';
 
 const FriendListItem = ({title, friends }) => (
   

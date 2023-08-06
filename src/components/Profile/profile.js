@@ -2,7 +2,7 @@
 
 import PropTypes from "prop-types";
 
-import{Container,Title,Description,Avatar,Name,Tag,Location,Stats,Label,Quantity,Li} from './ProfileStyles';
+import{Container,Title,Description,Avatar,Name,Tag,Location,Stats,Label,Quantity,Li} from './ProfileStyles.js';
 
 
 

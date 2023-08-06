@@ -1,7 +1,7 @@
 
 import PropTypes from "prop-types";
 
-import{Container,Title,Table,THead,Tr,Th,TBody,Td} from './TransactionHistoryStyles';
+import{Container,Title,Table,THead,Tr,Th,TBody,Td} from './TransactionHistoryStyles.js';
 
 const TransactionHistory = ({title,items }) => (
    
