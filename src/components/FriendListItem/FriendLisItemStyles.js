@@ -1,7 +1,4 @@
-
 import styled from 'styled-components';
-
-import PropTypes from "prop-types";
 
 const Container=styled.section`
 display:block;
@@ -100,34 +97,4 @@ margin-top:auto;
 margin-bottom:auto;
 background:#33cc0a;`;
 
-
-const FriendList = ({title, friends }) => (
-  
-        <Container>
-          <Title>{title}</Title>
-      <List>
-      {   friends.map(friend => (
-        friend.isOnline ? <Li key={friend.id}><Status><PointGreen></PointGreen></Status>
-       <Avatar
-        src={friend.avatar}
-         alt="User avatar" />
-       <Name>{friend.name}</Name></Li> : <Li key={friend.id}><Status><PointRed></PointRed></Status>
-       <Avatar
-        src={friend.avatar}
-         alt="User avatar" />
-       <Name>{friend.name}</Name></Li>
-      
-                 
-        ))}
-       
-       </List>
-      </Container>
-  
-  );
-
-  FriendList.propTypes = {
-    title:PropTypes.string,
-   friends: PropTypes.array
-   };
-
-  export {FriendList}
+export{Container,Title,List,Li,Status,Avatar,Name,PointRed,PointGreen}

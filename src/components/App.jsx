@@ -1,18 +1,19 @@
-import {Profile} from './Profile/profile.js';
+import {Profile} from './Profile/Profile';
 
-import user from './Profile/user.json';
+import {Statistics} from './Statistics/Statistics';
 
-import {Statistics} from './Statistics/statistics.js';
+import {FriendListItem} from './FriendListItem/FriendListItem';
 
-import data from './Statistics/data.json';
+import {TransactionHistory} from './TransactionHistory/TransactionHistory';
 
-import {FriendList} from './FriendList/friendlist.js';
 
-import friends from './FriendList/friends.json';
+import user from 'data/user.json';
 
-import {TransactionHistory} from './TransactionHistory/transaction-history.js';
+import data from 'data/data.json';
 
-import transactions from './TransactionHistory/transactions.json';
+import friends from 'data/friends.json';
+
+import transactions from 'data/transactions.json';
 
 
 export const App = () => {
@@ -22,7 +23,10 @@ export const App = () => {
   tag={user.tag}
   location={user.location}
   avatar={user.avatar}
-  stats={user.stats}/> <Statistics title="Upload stats" stats={data}/> <FriendList title="Friends" friends={friends}/> <TransactionHistory title="Transaction History" items={transactions}/> 
+  stats={user.stats}/> 
+  <Statistics title="Upload stats" stats={data}/> 
+  <FriendListItem title="Friends" friends={friends}/> 
+  <TransactionHistory title="Transaction History" items={transactions}/> 
    </>
   );
   

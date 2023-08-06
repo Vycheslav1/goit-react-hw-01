@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-import PropTypes from "prop-types";
-
-
 const Container=styled.section`
 display:block;
 width:100%;
@@ -92,36 +89,4 @@ line-height:1.1;
 letter-spacing: 0.02em;
 color:#bec2b8;`;
 
-
-const TransactionHistory = ({title,items }) => (
-   
-    <Container>
-        <Title>{title}</Title>
-    <Table>
-        <THead>
-    <Tr>
-      <Th>Type</Th>
-      <Th>Amount</Th>
-      <Th>Currency</Th>
-    </Tr>
-  </THead>
-  <TBody>
-
-        {items.map(item => (
-          <Tr key={item.id}>
-          <Td>{item.type}</Td>
-          <Td>{item.amount}</Td>
-          <Td>{item.currency}</Td>
-        </Tr>
-        ))}
-   </TBody>
-      </Table>
-    </Container>
-        );
-
-  TransactionHistory.propTypes = {
-    title:PropTypes.string,
-   items: PropTypes.array
-  };
-
-  export {TransactionHistory}
+export{Container,Title,Table,THead,Tr,Th,TBody,Td}
