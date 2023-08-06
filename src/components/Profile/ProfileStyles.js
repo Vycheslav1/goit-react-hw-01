@@ -30,10 +30,9 @@ display:block;
 margin-left:auto;
 margin-right:auto;
 margin-top:20px;
-width:300px;
-height:300px;
-
-padding:20px;
+width:340px;
+height:auto;
+padding:20px 20px 20px 20px;
 box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
 background:#F8F8F8;`;
 
@@ -95,13 +94,12 @@ display:flex;
 list-style:none;
 margin-left:auto;
 margin-right:auto;
-padding-top:20px;
 margin-top:0;
-width:300px;
+width:340px;
 height:auto;
+padding:20px 20px 20px 20px;
 gap:60px;
 box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
-padding-bottom:20px;
 background:#b4fee7;`;
 
 const Label=styled.span`
@@ -130,6 +128,9 @@ line-height:1.1;
 letter-spacing: 0.02em;
 color:#000;`;
 
-const Li=styled.li`display:block;`;
+const Li=styled.li`display:block;
+width:auto;
+height:aoto;
+justify-content:center;`;
 
 export{Container,Title,Description,Avatar,Name,Tag,Location,Stats,Label,Quantity,Li}
