@@ -40,7 +40,7 @@ const Name = styled.p`
   color: #000;
 `;
 
-const PointRed = styled.span`
+const Point = styled.span`
   display: flex;
   width: 20px;
   height: 20px;
@@ -49,19 +49,8 @@ const PointRed = styled.span`
   margin-right: 20px;
   margin-top: auto;
   margin-bottom: auto;
-  background: #ff3412;
+
+  background: ${props => (props.$state === 'true' ? '#33cc0a' : '#ff3412')};
 `;
 
-const PointGreen = styled.span`
-  display: flex;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: auto;
-  margin-bottom: auto;
-  background: #33cc0a;
-`;
-
-export { Li, Status, Avatar, Name, PointRed, PointGreen };
+export { Li, Status, Avatar, Name, Point };
