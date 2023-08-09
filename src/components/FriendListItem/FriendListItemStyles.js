@@ -50,7 +50,7 @@ const Point = styled.span`
   margin-top: auto;
   margin-bottom: auto;
 
-  background: ${props => (props.$state === 'true' ? '#33cc0a' : '#ff3412')};
+  background: ${props => (props.state ? '#33cc0a' : '#ff3412')};
 `;
 
 export { Li, Status, Avatar, Name, Point };

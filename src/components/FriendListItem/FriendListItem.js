@@ -5,7 +5,7 @@ import { Li, Status, Avatar, Name, Point } from './FriendListItemStyles.js';
 const FriendListItem = ({ avatar, name, isOnline, id }) => (
   <Li key={id}>
     <Status>
-      <Point $state={isOnline.toString()}></Point>
+      <Point state={isOnline}></Point>
     </Status>
     <Avatar src={avatar} alt="User avatar" />
     <Name>{name}</Name>

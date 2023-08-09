@@ -11,7 +11,7 @@ import {
 
 const Statistics = ({ title, stats }) => (
   <Statistic>
-    {title ? <Title>{title}</Title> : <Title></Title>}
+    {title && <Title>{title}</Title>}
 
     <Stat>
       {stats.map(stat => (
